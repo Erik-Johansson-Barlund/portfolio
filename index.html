@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="miniräknare/styles.css">
+<link rel="stylesheet" href="styles.css">
+     </head>
+
+     <body>
+          <header>
+               
+               
+               <div class="head-wrapper">
+                    <div class="window">
+                    <div class="test">
+                         <div class="inner-test">
+                    <div class="header-img">
+                         <img src="images/erik.png" height="400px">
+                    </div>
+               </div></div>
+          </div>
+                    <div class="head-info-wrapper">
+                         <h1>Erik Johansson Bärlund</h1>
+                    <h2 class="header-word">En man som gillar Webdesign</h2>
+                         <div class="about">
+                         <div class=text1>
+                         <p>Hej och välkommen till min portfoliosida.
+                         </p></div>
+                         <div class=text2>
+                         <p>Jag sturerar just nu FrontEnd design vid EC i helsingborg. </p>
+                              <p>Jag bor med familj och husdjur i ett hus i lilla 
+                              Ekeby som ligger två mil utanför Helsingborg.
+                         Jag är ursprungligen från Stockholm men trivs bra här på sydligare breddgrader.
+                         </p><br>
+                    <p>Om du hittat hit som rekryterare så finner du mitt CV och tidigare projekt i länkarna nedan eller genom att kika runt på sidan.</p></div>
+                    </div>
+                    </div>
+                   
+               </div>
+               <div class="links"> 
+                    <a href="cv.pdf"><img src="images/icons/cv.svg" height="21px"> CV</a>
+                    <a href="#1"><img src="images/icons/projects.svg" height="28px" style="margin-bottom: -5px;"> Projekt</a>
+                    <a href="https://github.com/Erik-Johansson-Barlund"><img src="images/icons/github.svg" height="22px"> Github</a>
+                    <a href="mailto:erik163@gmail.com"><img src="images/icons/mail.svg" height="24px" style="margin-bottom: -3px;"> Kontakta mig</a>
+                    <a href="https://open.spotify.com/playlist/34dO8YKcdLeCAfrfvknPqM?si=lobNeihzQtOkj9FYoCmKzg"><img src="images/icons/spotify.svg" height="22px"> I mina lurar just nu</a></div>
+              
+          </header>
+          <section class="calculator_section" id="1">
+              <div class="test-output"> </div>
+               
+               <div class="calc-wrapper">
+                    <div class="display">
+                         <p id="result"></p>
+                    </div>
+                    <div class="buttons">
+                         <div class="button" id="ac">AC</div>
+                         <div class="button" id="negate">+/-</div>
+                         <div class="button" id="procent">%</div>
+                         <div class="button cal">/</div> 
+                         <div class="button num">7</div>
+                         <div class="button num">8</div>
+                         <div class="button num">9</div>
+                         <div class="button cal">*</div>
+                         <div class="button num">4</div>
+                         <div class="button num">5</div>
+                         <div class="button num">6</div>
+                         <div class="button cal">-</div>
+                         <div class="button num">1</div>
+                         <div class="button num">2</div>
+                         <div class="button num">3</div>
+                         <div class="button cal">+</div>
+                         <div class="button num num0">0</div>
+                         <div class="button num">.</div>
+                         <div class="button" id="count">=</div>
+     
+                    </div>
+               </div>
+         
+               
+               <div class="calctext">
+                    <p>Ett litet sidoprojekt som jag skapade när jag höll på att lära mig Javascript.</p>
+          <p>Miniräknaren är fullt fungerande, du kan testa den nu genom att klicka på knapparna.</p>
+               </div>
+
+          </section>
+         
+          <div class="moviesite-section">
+               <div class="movie-bg"></div>
+               <div class="underlay"></div>
+               <div class="movietext">
+                    <p>Denna sida kom till ur ett skolprojekt. Sidan hämtar och formatterar data från två stycken olika film API:er</p>
+          <p>Sidan innehåller även ett bibliotek som jag snubblade över på NPM. Biblioteket (Color Thief) analyserar en bild och ger tillbaka
+            den dominanta färgen.</p>
+            </p><a href="https://erik-johansson-barlund.github.io/Film-site/" target="_blank">Kolla in sidan live här</a></p>
+            <p><a href="https://github.com/Erik-Johansson-Barlund/Film-site" target="_blank">Eller Github-repot här</a></p>
+               </div>
+
+          </div>
+          <section class="gamesite">
+
+               <div class="gamesite-text">
+                    <h2>Under produktion</h2><br>
+                    <p>Mitt senaste projekt är en spelcommunity/nyhetssajt där användare ska kunna diskuttera spel, följa nyheter
+                         skapa profiler och interagera med varandra.
+                    </p><br>
+                    <p>Sidan är byggd i React och använder Firebase som backend.</p><br>
+                    <p>Sidan är designad för att vara responsiv och modern i sitt gränssnitt och tilltala ungdomar och gamers.</p><br>
+                    <p>Sidan släpps under våren 2021</p>
+               </div>
+               <div class="gamesite-img">
+                    <img id="gamesiteimg" src="images/gamesite.png" alt="project gamesite">
+               </div>
+          </section>
+          <footer>
+              <a href="#top"> <p>Tillbaka till toppen</p></a>
+          </footer>
+          <script type="text/javascript" src="scripts.js"></script>
+          <script src="miniräknare/scripts.js"></script>
+        
+     </body>
+
+</html>
+
+<!-- 
+     //Saker att ha med på sidan:
+     * 3d-effekt på element
+     * paralax i bakgrund
+     * special markör?
+
+     //SEKIONER
+     * Om mig sektion längst upp, kanske som en splashscreen?
+     * CV sektion
+     * Portfolio löpande ner för sidan, varje projekt får ungefär en sida innehåll
+     * Blog på ena sidan kontakt på andra?
+-->
