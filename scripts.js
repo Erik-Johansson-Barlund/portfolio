@@ -38,8 +38,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
   let distance = 0;
   window.addEventListener("scroll", function () {
     distance = window.scrollY;
-    console.log(distance);
+    if (distance < 300) {
+      header_window.style.transform = `translateX(0px) translateY(0px)`;
 
+      about_text.style.transform = `translateX(0px) translateY(0px)`;
+    }
     if (distance > 300) {
       header_window.style.transform = `translateX(${
         -distance / 2 + 150
