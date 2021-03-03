@@ -163,6 +163,7 @@ h2 {
   padding: 3em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
+  z-index: 200;
 }
 
 .moviesite {
@@ -226,6 +227,7 @@ h2 {
   padding: 0em 3em 0em 1em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
+  z-index: 200;
 }
 
 footer {
