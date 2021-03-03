@@ -19,10 +19,16 @@ a {
 a:hover {
   color: rgb(63, 62, 62);
 }
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 header {
   position: relative;
   perspective: 3000px;
-  height: 75vh;
+  height: 45vh;
   width: 110%;
   margin-left: -3%;
   margin-top: -3%;
@@ -31,6 +37,9 @@ header {
   filter: darken(70%);
   background-color: white;
   z-index: 20;
+}
+.window {
+  display: none;
 }
 .header-word {
   font-weight: 300;
@@ -79,10 +88,12 @@ header {
 
 .head-info-wrapper {
   transform-style: preserve-3d;
-  height: 470px;
-  width: 700px;
-  margin-left: -80px;
-  padding-left: 40px;
+  font-size: 0.8em;
+  height: auto !important;
+  width: auto;
+  padding: 2em;
+  margin-left: auto;
+  padding-left: auto;
 }
 .head-info-wrapper h1,
 h2 {
@@ -91,14 +102,16 @@ h2 {
 .links {
   display: flex;
   justify-content: center;
-  padding: 90px;
+  padding-left: 30px;
+
+  padding-right: 50px;
 }
 .links a {
   text-decoration: none;
   color: black;
-  font-size: 1.5em;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-size: 0.8em;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .projectheader {
   text-align: center;
@@ -133,15 +146,15 @@ h2 {
 
 .calctext {
   position: absolute;
-  top: 130vh;
-  left: 30%;
+  top: 70vh;
+  left: 10%;
   width: 300px;
 
   border-radius: 5px;
   padding: 3em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
-  z-index: 1000;
+  z-index: 1;
 }
 .moviesitetext {
   width: 300px;
@@ -151,75 +164,82 @@ h2 {
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
 }
-.movietext {
-  position: absolute;
-  bottom: 0em;
-  width: 100vw;
-  margin-left: 10em;
-  padding: 3em;
-  box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.418);
-  background-color: rgba(253, 249, 249, 0.881);
-}
+
 .moviesite {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 75vh;
   padding-top: 5em;
 }
 .moviesitetext {
-  width: 300px;
-  height: 20em;
+  width: 100vw;
+  height: auto;
   margin-top: 5em;
-  margin-right: 8em;
-  margin-left: 18em;
+  margin-right: 0em;
+  margin-left: 0em;
+  margin-bottom: 3em;
   border-radius: 5px;
-  padding: 3em;
+  padding: 1em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
 }
 .moviesite img {
-  width: 60em;
-  height: 36em;
+  position: relative;
+  margin-left: auto;
+
+  margin-right: auto;
+  margin-top: -2em;
+  width: 100%;
+  height: auto;
+
   box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
 }
 .gamesite img {
-  width: 60em;
-  height: 36em;
+  position: relative;
+  margin-left: auto;
+
+  margin-right: auto;
+  margin-top: -2em;
+  width: 100%;
+  height: auto;
   box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
 }
 .gamesite {
   position: relative;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   height: 75vh;
-  padding-top: 5em;
+  padding-top: 2em;
 }
 
 .gamesite-text {
-  width: 400px;
-  height: 25em;
-  margin-top: 5em;
-  margin-right: 4em;
-  margin-left: 8em;
+  width: 100vw;
+  height: auto;
+  margin-top: -3em;
+  margin-right: 1em;
+  margin-left: 0em;
+  margin-bottom: 3em;
   border-radius: 5px;
-  padding: 2em;
+  padding: 0em 3em 0em 1em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
-}
-.gamesite-img {
-  width: 70em;
-  padding: 8em;
-  margin-left: 4em;
 }
 
 footer {
   text-align: center;
   padding-bottom: 1em;
 }
-@media screen and (min-width: 700px) {
+
+@media screen and (min-width: 1116px) {
+  header {
+    height: 75vh;
+  }
   .head-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -231,6 +251,7 @@ footer {
   }
 
   .window {
+    display: block;
     overflow: hidden;
     border: 1px solid black;
     height: 430px;
@@ -290,5 +311,64 @@ footer {
     top: 100%;
     left: 0%;
     z-index: 20;
+  }
+  .calctext {
+    top: 130vh;
+    left: 30%;
+    z-index: 1000;
+  }
+  .moviesitetext {
+    width: 350px;
+    height: 20em;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: 15%;
+    border-radius: 5px;
+    padding: 3em;
+    box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
+    background-color: rgb(255, 255, 255);
+  }
+  .moviesite {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 75vh;
+    padding-top: 5em;
+  }
+  .moviesite img {
+    position: absolute;
+    right: 2em;
+    width: 50%;
+    height: auto;
+
+    box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
+  }
+  .gamesite {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 75vh;
+    padding-top: 5em;
+  }
+
+  .gamesite-text {
+    width: 400px;
+    height: 25em;
+    margin-top: 1em;
+    margin-right: 10%;
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
+    background-color: rgb(255, 255, 255);
+  }
+  .gamesite img {
+    position: absolute;
+    left: 2em;
+    width: 50%;
+    height: auto;
+    box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
   }
 }
