@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const calc_wrapper = document.querySelector(".calc-wrapper");
   const calc_output = document.querySelector(".test-output");
   const gamesiteimg = document.getElementById("gamesiteimg");
+  const filmsiteimg = document.getElementById("filmsiteimg");
   //const calculator_section = document.querySelector('.calculator_section');
 
   // CHANGE TEXT ON STARTPAGE
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   let distance = 0;
   window.addEventListener("scroll", function () {
     distance = window.scrollY;
-    if (distance < 300) {
+    if (distance < 100) {
       header_window.style.transform = `translateX(0px) translateY(0px)`;
 
       about_text.style.transform = `translateX(0px) translateY(0px)`;
@@ -56,9 +57,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
           -distance / 100
         }deg)`;
         calc_output.style.filter = `opacity(${distance / 8}%)`;
+      } else {
+        calc_wrapper.style.transform = `translateX(400px) rotateZ(-8deg)`;
       }
-      if (distance > 1200) {
-        gamesiteimg.style.transform = `rotate(${distance / 150 - 14}deg)`;
+      if (distance > 920 && distance < 1500) {
+        filmsiteimg.style.transform = `rotate(${distance / 150 - 6}deg)`;
+      }
+      if (distance > 1640) {
+        gamesiteimg.style.transform = `rotate(${-distance / 150 + 12}deg)`;
       }
     }
     //calculator_section.style.transform = `translateY(${distance}px)`;
@@ -87,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     if (distance < 300) {
       about_text.style.transform = `rotateY(${-x_axis * 0.3}deg) rotateX(${
         y_axis * 0.3
-      }deg) translateZ(320px)`;
+      }deg) translateZ(0px)`;
     }
   });
 });

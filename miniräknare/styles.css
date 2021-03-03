@@ -1,114 +1,106 @@
 .calculator_section {
-	background-image: url(bg.jpg);
-	/*
+  /* background-image: url(bg.jpg); */
+  /*
      https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260
      */
-	background-size: 2000px;
-	height: 95vh;
+  background-size: 2000px;
+  height: 95vh;
 }
 .calc-wrapper {
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	width: 270px;
-	height: 380px;
-	margin-top: 300px;
-	margin-left: -300px;
-	background-image: linear-gradient(3deg, rgb(59, 59, 57), rgb(0, 0, 0));
-	border-radius: 8px;
-	box-shadow: -5px 5px 8px 4px rgba(7, 7, 7, 0.443);
-	transform-style: preserve-3d;
-	transform: rotateZ(-5deg);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 380px;
+  margin-top: 300px;
+  margin-left: -300px;
+  background-image: linear-gradient(3deg, rgb(59, 59, 57), rgb(0, 0, 0));
+  border-radius: 8px;
+  box-shadow: -5px 5px 8px 4px rgba(7, 7, 7, 0.443);
+  transform-style: preserve-3d;
+  transform: rotateZ(-5deg);
 }
 .display {
-	overflow: hidden;
-	width: 250px;
-	height: 80px;
-	margin: 10px;
-	box-shadow: 1px 3px 5px 2px rgba(245, 216, 98, 0.651);
-	background-image: linear-gradient(
-		3deg,
-		rgb(250, 237, 183),
-		rgba(255, 238, 172, 0.395)
-	);
-	font-family: 'Quantico', sans-serif;
-	/*background-color: rgba(255, 238, 172, 0.995);*/
+  overflow: hidden;
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+  box-shadow: 1px 3px 5px 2px rgba(245, 216, 98, 0.651);
+  background-image: linear-gradient(
+    3deg,
+    rgb(250, 237, 183),
+    rgba(255, 238, 172, 0.395)
+  );
+  font-family: "Quantico", sans-serif;
+  /*background-color: rgba(255, 238, 172, 0.995);*/
 }
 #result {
-	font-size: 3em;
-	margin-top: 10px;
-	padding: 10px;
-	text-align: right;
-	color: rgb(58, 58, 58);
+  font-size: 3em;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: right;
+  color: rgb(58, 58, 58);
 }
 
 .buttons {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	width: 250px;
-	height: 260px;
-	margin: 10px;
-	background-color: rgb(109, 100, 100);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 250px;
+  height: 260px;
+  margin: 10px;
+  background-color: rgb(109, 100, 100);
 }
 .button {
-	margin: 0px 1px 0px 0px;
-	height: 40px;
-	padding-top: 10px;
-	text-align: center;
-	font-size: 1.5em;
-	border-radius: 4px;
-	box-shadow: 1px -1px 2px 1px rgba(7, 7, 7, 0.443);
+  margin: 0px 1px 0px 0px;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 4px;
+  box-shadow: 1px -1px 2px 1px rgba(7, 7, 7, 0.443);
 }
 .button:hover {
-	filter: brightness(90%);
+  filter: brightness(90%);
 }
 .num {
-	background-image: linear-gradient(
-		3deg,
-		rgb(85, 84, 82),
-		rgba(172, 171, 166, 0.395)
-	);
+  background-image: linear-gradient(
+    3deg,
+    rgb(85, 84, 82),
+    rgba(172, 171, 166, 0.395)
+  );
 
-	color: white;
+  color: white;
 }
 .cal {
-	background-image: linear-gradient(
-		9deg,
-		rgb(235, 173, 39),
-		rgb(197, 143, 26)
-	);
+  background-image: linear-gradient(9deg, rgb(235, 173, 39), rgb(197, 143, 26));
 }
 
 .num0 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	background-color: grey;
-	color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: grey;
+  color: white;
 }
 
 #count {
-	background-image: linear-gradient(
-		9deg,
-		rgb(235, 173, 39),
-		rgb(197, 143, 26)
-	);
+  background-image: linear-gradient(9deg, rgb(235, 173, 39), rgb(197, 143, 26));
 }
 #ac,
 #procent,
 #negate {
-	background-color: rgb(43, 42, 39);
-	color: white;
-	border-radius: 0px;
+  background-color: rgb(43, 42, 39);
+  color: white;
+  border-radius: 0px;
 }
 @media screen and (max-width: 700px) {
-	body {
-		background-size: 700px;
-	}
-	.calc-wrapper {
-		margin-left: 40px;
-		margin-top: 60px;
+  body {
+    background-size: 700px;
+  }
+  .calc-wrapper {
+    margin-left: 40px;
+    margin-top: 60px;
 
-		transform: rotateZ(0deg);
-	}
+    transform: rotateZ(0deg);
+  }
 }
