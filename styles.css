@@ -291,6 +291,8 @@ footer {
     padding-left: 64px;
   }
   .links {
+    position: absolute;
+    top: 47em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -298,6 +300,7 @@ footer {
     transition: all 0.3s;
   }
   .links a {
+    display: block;
     text-decoration: none;
     color: black;
     font-size: 1.5em;
@@ -374,7 +377,7 @@ footer {
     box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   body {
     max-width: 100vw;
     overflow: hidden;
@@ -387,8 +390,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
   }
   .test {
+    display: none;
     margin-left: auto;
   }
   .inner-test {
@@ -396,11 +401,11 @@ footer {
   }
 
   .window {
-    display: block;
+    display: none;
     overflow: hidden;
     border: 1px solid black;
     height: 440px;
-    width: 30%;
+    width: 100%;
     margin-right: -40px;
     margin-top: -50px;
     min-width: 560px;
@@ -408,15 +413,16 @@ footer {
   }
   .about {
     background-color: white;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 1vw;
-    margin-right: 11vw;
-    padding: 10px;
+    width: 90%;
+    height: auto;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 4em;
+    padding: 1em;
     z-index: 200;
     /*background-image: linear-gradient(90deg, #ffd6506d, #da4a0c5b);*/
-    box-shadow: -2px 2px 8px 6px rgba(30, 30, 60, 0.28);
-    text-align: center;
+    box-shadow: none;
+    text-align: left;
   }
 
   .text1 {
@@ -424,33 +430,38 @@ footer {
     font-size: 1.5em;
   }
   .head-info-wrapper {
-    transform-style: preserve-3d;
-    height: 470px;
-    width: 400px;
-    margin-top: -90px;
-    margin-left: 10px;
-    padding-left: 40px;
+    transform-style: none;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 1em;
+    padding: 0em;
   }
   .head-info-wrapper h1 {
-    padding-left: 0px;
+    padding-left: 1em;
     padding-top: 0px;
   }
   .head-info-wrapper h2 {
-    padding-left: 4px;
+    padding-left: 2em;
   }
   .links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 90px;
+    justify-content: space-between;
+    padding: 1em;
     transition: all 0.3s;
+    text-align: center;
   }
   .links a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 0.8em;
+    padding-left: 20px;
+    padding-right: 20px;
     transition: all 0.3s;
   }
   .links a:hover {
@@ -458,11 +469,13 @@ footer {
   }
   .calculator_section {
     height: auto;
+    padding-right: 20px;
     z-index: -22 !important;
   }
   .calc-wrapper {
     position: relative;
-    margin-left: -55%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
     left: 0%;
     z-index: 20;
@@ -471,18 +484,27 @@ footer {
     position: relative;
     top: 0vh;
     left: 0%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 5em;
+    padding: 1em;
+    margin-bottom: 2em;
     z-index: 1000;
+    box-shadow: none;
   }
   .moviesitetext {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     height: auto;
-    margin-top: 0em;
-    margin-right: auto;
+    margin-top: 3em;
+    margin-right: 5em;
     margin-left: auto;
+    margin-bottom: 0em;
     border-radius: 5px;
     padding: 1em;
     box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
     background-color: rgb(255, 255, 255);
+    box-shadow: none;
   }
   .moviesite {
     position: relative;
@@ -490,14 +512,17 @@ footer {
     flex-direction: column-reverse;
     justify-content: flex-start;
     height: auto;
+    padding-right: 5px;
     padding-top: 0em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
   }
   .moviesite img {
     position: relative;
     right: 0em;
     width: 100%;
     height: auto;
-
+    margin-bottom: 0em;
     box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);
   }
   .gamesite {
@@ -507,22 +532,26 @@ footer {
     justify-content: flex-end;
     height: auto;
     padding-top: 0em;
+    margin-top: 2em;
+    padding-right: 5px;
   }
 
   .gamesite-text {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     height: auto;
-    margin-top: 0em;
-    margin-right: 0%;
+    margin-top: 2em;
+    margin-right: 5em;
     margin-left: auto;
     border-radius: 5px;
     padding: 1em;
-    box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
+    box-shadow: none;
     background-color: rgb(255, 255, 255);
   }
   .gamesite img {
     position: relative;
     left: 0em;
+    padding-top: 4em;
     width: 100%;
     height: auto;
     box-shadow: 7px 7px 17px 3px rgba(0, 0, 0, 0.418);

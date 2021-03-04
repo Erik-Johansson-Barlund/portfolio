@@ -71,6 +71,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
       }
       //calculator_section.style.transform = `translateY(${distance}px)`;
       links.style.transform = `translateY(${-distance / 5}px)`;
+    } else {
+      calc_wrapper.style.transform = `translateX(0px) rotateZ(0deg)`;
+      filmsiteimg.style.transform = `rotate(0}deg)`;
+      gamesiteimg.style.transform = `rotate(0}deg)`;
     }
     /*setTimeout(() => {
 			document.querySelector('section h3').classList.add('animate-me');
