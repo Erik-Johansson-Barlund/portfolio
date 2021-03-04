@@ -38,38 +38,40 @@ document.addEventListener("DOMContentLoaded", function (e) {
   //PARALAX
   let distance = 0;
   window.addEventListener("scroll", function () {
+    console.log(window.innerWidth);
     distance = window.scrollY;
-    if (distance < 100) {
-      header_window.style.transform = `translateX(0px) translateY(0px)`;
+    if (window.innerWidth > 1115) {
+      if (distance < 100) {
+        header_window.style.transform = `translateX(0px) translateY(0px)`;
 
-      about_text.style.transform = `translateX(0px) translateY(0px)`;
+        about_text.style.transform = `translateX(0px) translateY(0px)`;
+      }
+      if (distance > 300) {
+        header_window.style.transform = `translateX(${
+          -distance / 2 + 150
+        }px) translateY(${-distance / 3 + 100}px)`;
+
+        about_text.style.transform = `translateX(${
+          distance / 3 - 100
+        }px) translateY(${-distance / 2 + 150}px)`;
+        if (distance < 800) {
+          calc_wrapper.style.transform = `translateX(${
+            distance / 2
+          }px) rotateZ(${-distance / 100}deg)`;
+          calc_output.style.filter = `opacity(${distance / 8}%)`;
+        } else {
+          calc_wrapper.style.transform = `translateX(400px) rotateZ(-8deg)`;
+        }
+        if (distance > 920 && distance < 1500) {
+          filmsiteimg.style.transform = `rotate(${distance / 150 - 6}deg)`;
+        }
+        if (distance > 1640) {
+          gamesiteimg.style.transform = `rotate(${-distance / 150 + 12}deg)`;
+        }
+      }
+      //calculator_section.style.transform = `translateY(${distance}px)`;
+      links.style.transform = `translateY(${-distance / 5}px)`;
     }
-    if (distance > 300) {
-      header_window.style.transform = `translateX(${
-        -distance / 2 + 150
-      }px) translateY(${-distance / 3 + 100}px)`;
-
-      about_text.style.transform = `translateX(${
-        distance / 3 - 100
-      }px) translateY(${-distance / 2 + 150}px)`;
-      if (distance < 800) {
-        calc_wrapper.style.transform = `translateX(${distance / 2}px) rotateZ(${
-          -distance / 100
-        }deg)`;
-        calc_output.style.filter = `opacity(${distance / 8}%)`;
-      } else {
-        calc_wrapper.style.transform = `translateX(400px) rotateZ(-8deg)`;
-      }
-      if (distance > 920 && distance < 1500) {
-        filmsiteimg.style.transform = `rotate(${distance / 150 - 6}deg)`;
-      }
-      if (distance > 1640) {
-        gamesiteimg.style.transform = `rotate(${-distance / 150 + 12}deg)`;
-      }
-    }
-    //calculator_section.style.transform = `translateY(${distance}px)`;
-    links.style.transform = `translateY(${-distance / 5}px)`;
-
     /*setTimeout(() => {
 			document.querySelector('section h3').classList.add('animate-me');
 		}, 400);*/

@@ -123,3 +123,12 @@
     transform: rotateZ(0deg);
   }
 }
+@media screen and (max-width: 600px) {
+  .calc-wrapper {
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: 50px;
+
+    transform: rotateZ(15deg);
+  }
+}
