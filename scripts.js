@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   window.addEventListener("scroll", function () {
     console.log(window.innerWidth);
     distance = window.scrollY;
-    if (window.innerWidth > 1115) {
+    if (window.innerWidth > 1000) {
       if (distance < 100) {
         header_window.style.transform = `translateX(0px) translateY(0px)`;
 
