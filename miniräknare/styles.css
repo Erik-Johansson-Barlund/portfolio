@@ -124,6 +124,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  body {
+    background-size: 100vw;
+  }
   .calc-wrapper {
     margin-left: 0%;
     margin-right: auto;
