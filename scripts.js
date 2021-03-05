@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
       -x_axis * 0.6
     }px) translateZ(20px)`;
     if (distance < 300) {
-      about_text.style.transform = `rotateY(${-x_axis * 0.3}deg) rotateX(${
-        y_axis * 0.3
+      about_text.style.transform = `rotateY(${-x_axis * 0.4}deg) rotateX(${
+        y_axis * 0.9
       }deg) translateZ(0px)`;
     }
   });
