@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }px) translateZ(20px)`;
     if (distance < 300) {
       about_text.style.transform = `rotateY(${-x_axis * 0.4}deg) rotateX(${
-        y_axis * 0.9
-      }deg) translateZ(0px)`;
+        y_axis * 0.6
+      }deg) translateZ(20px)`;
     }
   });
 });
