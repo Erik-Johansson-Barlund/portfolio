@@ -100,6 +100,8 @@ h2 {
   padding-left: 60px;
 }
 .links {
+  position: absolute;
+  bottom:0;
   display: flex;
   justify-content: center;
   padding-left: 30px;
@@ -237,7 +239,7 @@ footer {
 
 @media screen and (min-width: 1000px) {
   header {
-    height: 75vh;
+    height: 85vh;
   }
   .head-wrapper {
     display: flex;
@@ -471,6 +473,7 @@ footer {
     padding-left: 1.3em;
   }
   .links {
+    position: relative
     display: flex;
     flex-direction: row;
     justify-content: space-between;
