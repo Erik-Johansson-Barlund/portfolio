@@ -367,7 +367,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 9vh;
+  padding-top: 10vh;
   padding-left: 4em;
   transition: all 0.3s;
 }
@@ -388,16 +388,23 @@ header {
   padding-top: 20vh;
   text-align: center;
 }
+.calculator_section {
+  position: relative;
+  overflow: hidden;
+  height: 50em;
+  margin-top: -5em;
+  z-index: 1 !important;
+}
 .calc-wrapper {
   position: absolute;
-  top: 110%;
+  top: 0%;
   left: 0%;
-  z-index: 20;
+  z-index: 3000;
 }
 .test-output {
   position: absolute;
   filter: opacity(0%);
-  top: 99.5%;
+  top: 9.5%;
   left: 270px;
   width: 400px;
   height: 675px;
@@ -408,11 +415,11 @@ header {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 .calctext {
   position: absolute;
-  top: 135%;
+  top: 35%;
   left: 43%;
   width: 300px;
 
@@ -420,7 +427,7 @@ header {
   padding: 3em;
   box-shadow: 2px 12px 8px 6px rgba(0, 0, 0, 0.075);
   background-color: rgb(255, 255, 255);
-  z-index: 1;
+  z-index: 300;
 }
 .moviesitetext {
   width: 350px;

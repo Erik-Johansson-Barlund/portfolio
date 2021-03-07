@@ -93,7 +93,7 @@
   color: white;
   border-radius: 0px;
 }
-@media screen and (max-width: 1116px) {
+/* @media screen and (max-width: 1116px) {
   body {
     background-size: 700px;
   }
@@ -122,15 +122,15 @@
 
     transform: rotateZ(0deg);
   }
-}
-@media screen and (max-width: 600px) {
+} */
+@media screen and (max-width: 999px) {
   body {
     background-size: 100vw;
   }
   .calc-wrapper {
     margin-left: 0%;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 8em;
 
     transform: rotateZ(15deg);
   }
